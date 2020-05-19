@@ -12,7 +12,7 @@ class ColorBloc extends Bloc<ColorEvent, Color> {
 
   @override
   Stream<Color> mapEventToState(event) async* {
-    if (event is ChangeColor) {
+    if (event is ColorChange) {
       yield _painter.getRandomColor();
     }
   }

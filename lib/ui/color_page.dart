@@ -12,7 +12,7 @@ class ColorPage extends StatelessWidget {
           return GestureDetector(
             onTap: () {
               BlocProvider.of<ColorBloc>(context).add(
-                ChangeColor(),
+                ColorChange(),
               );
             },
             child: AnimatedContainer(

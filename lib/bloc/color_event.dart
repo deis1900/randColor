@@ -5,6 +5,6 @@ abstract class ColorEvent extends Equatable{
   List<Object> get props => [];
 
 }
-class ChangeColor extends ColorEvent{
+class ColorChange extends ColorEvent{
 
 }

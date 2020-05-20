@@ -19,9 +19,21 @@ class ColorPage extends StatelessWidget {
               duration: Duration(milliseconds: 200),
               color: color,
               child: Center(
-                child: Text(
-                  'Hey there',
-                  style: Theme.of(context).textTheme.headline4,
+                child: Container(
+                  height: 100.0,
+                  width: 250.0,
+                  padding: EdgeInsets.all(30.0),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [color, Color.fromARGB(255, 255, 255, 255), color],
+                    ),
+                  ),
+                  child: Text(
+                    'Hey there',
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
                 ),
               ),
             ),

@@ -21,7 +21,10 @@ class MyApp extends StatelessWidget {
         Painter(),
       ),
       child: MaterialApp(
-        theme: ThemeData.light(),
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          brightness: Brightness.light,
+        ),
         home: Scaffold(body: ColorPage()),
       ),
     );
